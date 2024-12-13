@@ -1,16 +1,18 @@
-# qic
+# Overview
+This Flutter application interfaces with the API https://jsonplaceholder.typicode.com/posts to display a list of posts. Each post is initially displayed with a light yellow background, and once clicked, it will open a detailed screen where more information (the post's body) is shown.
 
-A new Flutter project.
+# Features Implemented:
+- Display Post List: Displays a list of posts fetched from the API.
+- Mark as Read: When a user clicks on any list item, it is marked as read, and the background color changes to white.
+- Navigate to Detail Screen: When a user clicks on any post, it navigates to a detail screen, displaying the post's description from the body key in the API response.
 
-## Getting Started
+# Missing Features:
+- Timer Functionality
+- Local Storage
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Technologies Used:
+- Flutter (Latest Version)
+- HTTP requests to fetch data from API using http package
+- Designed with Clean Architecture
+- State management using flutter_bloc package
+- Used redacted package for Shimmer effects
